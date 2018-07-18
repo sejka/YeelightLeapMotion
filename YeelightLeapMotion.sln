@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeelightLeapMotion", "YeelightLeapMotion\YeelightLeapMotion.csproj", "{02662F48-A3EF-4A0C-B31F-60DC1795F2C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leap", "Leap\Leap.csproj", "{CABD030E-9C49-41C7-BDE6-845C17BB1DE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02662F48-A3EF-4A0C-B31F-60DC1795F2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02662F48-A3EF-4A0C-B31F-60DC1795F2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02662F48-A3EF-4A0C-B31F-60DC1795F2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02662F48-A3EF-4A0C-B31F-60DC1795F2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABD030E-9C49-41C7-BDE6-845C17BB1DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABD030E-9C49-41C7-BDE6-845C17BB1DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABD030E-9C49-41C7-BDE6-845C17BB1DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABD030E-9C49-41C7-BDE6-845C17BB1DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A99F260-2F3A-4475-9E3D-A8B7AEAAB520}
+	EndGlobalSection
+EndGlobal
