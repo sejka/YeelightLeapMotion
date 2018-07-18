@@ -16,6 +16,7 @@ namespace YeelightLeapMotion
     public class YeelightLeapMotion
     {
         private const int UpdateDelayMilliseconds = 500;
+        private const int POWEROFF_TRESHOLD = 10;
         private static int _brightness = 1;
         private readonly string _bulbIp;
 
@@ -39,9 +40,9 @@ namespace YeelightLeapMotion
             {
                 if (BrightnessDifferenceTresholdExceeded(oldBrightness))
                 {
-                    if (_brightness < 10)
+                    if (_brightness < POWEROFF_TRESHOLD)
                     {
-                        await lightbulb.TurnOff();
+                        await lightbulb.TurnOff(UpdateDelayMilliseconds);
                         turnedOn = false;
                     }
                     else
@@ -51,7 +52,7 @@ namespace YeelightLeapMotion
                             await lightbulb.SetPower(true);
                             turnedOn = true;
                         }
-                        await lightbulb.SetBrightness(_brightness > 0 ? _brightness : 1, UpdateDelayMilliseconds);
+                        await lightbulb.SetBrightness(_brightness, UpdateDelayMilliseconds);
                         oldBrightness = _brightness;
                     }
                 }
